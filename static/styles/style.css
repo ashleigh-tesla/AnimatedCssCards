@@ -8,7 +8,7 @@
 
 html,
 body {
-    background: radial-gradient(red, yellow, green);
+    background: radial-gradient(deeppink, hotpink, pink);
 }
 
 .card-grid {
@@ -27,9 +27,15 @@ body {
     }
 }
 
+@media screen and (max-width: 330px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .card {
     --padding: 1rem;
-    background: #fff;
+    background: radial-gradient(red, yellow, green);
     border: 1px solid #777;
     border-radius: .25rem;
     overflow: hidden;

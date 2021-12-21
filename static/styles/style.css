@@ -6,11 +6,25 @@
     padding: 0;
 }
 
+html,
+body {
+    background: radial-gradient(red, yellow, green);
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     align-items: flex-start;
+}
+
+@media only screen and (min-width: 330px) and (max-width: 640px) {
+    .card-container {
+        margin: 0 5rem;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
 }
 
 .card {
